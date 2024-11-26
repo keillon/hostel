@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="header container">
+        <div class="nav-ico">
+            <img src="assets/img/globe.svg" alt="">
+            <h2 class="tittle-nav">Hostels</h2>
+
+        </div>
+        <nav class="nav">
+            <ul class="nav-ul">
+                <li class="nav-li"><a class="nav-a" href="#">Home</a></li>
+                <li class="nav-li"><a class="nav-a" href="#">Suporte</a></li>
+                <li class="nav-li"><a class="nav-a" href="#">Viagens</a></li>
+                
+                <!-- dropdown -->
+                <div class="dropdown btn-sky" id="dropdown" onclick="openDrop()">
+
+                    <li class="drop-nav"><a class="nav-a" style="color: white;" href="#">Estados</a></li>
+                    <img src="assets/img/down.svg" alt="">
+
+                    <div class="dropdown-nav drop"> 
+                        <li class="drop-item"><a class="nav-a" href="#">Fortaleza</a></li>
+                        <li class="drop-item"><a class="nav-a" href="#">São paulo</a></li>
+                        <li class="drop-item"><a class="nav-a" href="#">Rio de Janeiro</a></li>
+                        <li class="drop-item"><a class="nav-a" href="#">Amazonas</a></li>
+                        <li class="drop-item"><a class="nav-a" href="#">Parána</a></li>
+                    </div>
+
+                </div>
+
+                <!-- dropdown -->
+            </ul>
+        </nav>
+    </header>
+<!-- header -->
+
+<!-- section -->
+ <section class="search container">
+    <div class="search-full">
+        <h3>Estadias</h3>
+        <div class="search-box">
+            <div class="inputs-box">
+                <img src="assets/img/pin.svg" alt="">
+                <input type="search" name="search" id="" class="input" placeholder="Pra onde você vai?">
+            </div>
+            <div class="inputs-box">
+                <img src="assets/img/calendar.svg" alt="">
+                <input type="date" name="search" id="" class="input" placeholder="26 nov. - 27 de nov.">
+                <span class="data">datas</span>
+            </div>
+            <div class="inputs-box">
+                <img src="assets/img/user.svg" alt="">
+                <input type="search" name="search" id="" class="input" placeholder="2 Viajantes, 1 Quarto">
+                <span class="data">Viajantes</span>
+            </div>
+
+            <div class="btn-sky hv-busca">
+                <h2 class="btn-busca">Buscar</h2>
+            </div>
+        </div>
+
+    </div>
+ </section>
+<!-- section -->
+    <script src="script.js"></script>
+</body>
+</html>
